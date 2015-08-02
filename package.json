@@ -1,0 +1,27 @@
+{
+  "name": "TechKiez",
+  "version": "0.0.0",
+  "description": "Sample project for showing OOP UI development",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~4.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abisib/Techkiz.git"
+  },
+  "keywords": [
+    "techkiz",
+    "OOP",
+    "node"
+  ],
+  "author": "Itamar Segev",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/abisib/Techkiz/issues"
+  }
+}

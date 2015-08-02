@@ -1,0 +1,29 @@
+<html lang="en">
+    <head>
+        <title>Material Design Lite</title>
+        <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/material.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="panelHolder" class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+        </div>
+        <script src="js/material.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="js/ListItem.js"></script>
+        <script src="js/List.js"></script>
+        <script src="js/Panel.js"></script>
+        <script>
+            var contentPlaceholder = jQuery('#panelHolder');
+            var panel = new Panel(null, true);
+            contentPlaceholder.append(panel.getUIElement());
+            jQuery.getJSON('/getItems').done(function (data) {
+                var list = new List(data.items);
+                var listUI = list.getUIElement();
+                panel.setContent(listUI);
+            });
+        </script>
+    </body>
+</html>

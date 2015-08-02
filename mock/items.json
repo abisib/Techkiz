@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "title" : "Home",
+      "icon" : "home",
+      "url" : ""
+    },
+    {
+      "title" : "Inbox",
+      "icon" : "inbox",
+      "url" : ""
+    },
+    {
+      "title" : "Trash",
+      "icon" : "delete",
+      "url" : ""
+    }
+  ]
+}

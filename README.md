@@ -12,7 +12,7 @@ In this project, under the folder public/js you can find 3 classes for example.
  
  *ListItem.js  
  *List.js   
- *Panel.js
+ *Panel.js  
  Each class has a simple constructor, and a method that returns a jQuery element that should be rendered.  
  
 Running the project
